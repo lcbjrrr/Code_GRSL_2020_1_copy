@@ -17,7 +17,7 @@ function [Pauli_Image] = show_Pauli(S,index,control)
 % Speckle reduction in polarimetric SAR imagery with stochastic distances
 % and nonlocal means, Pattern Recognition, vol. 47, no. 1, pp. 141-157, 2014.
 % Coded in Matlab by Luis Gomez, July 2018 for getting result shown in:
-% (2) D. Santana-Cedrés, L. Gomez, L. Alvarez and A. C. Frery,"Despeckling
+% (2) D. Santana-Cedrï¿½s, L. Gomez, L. Alvarez and A. C. Frery,"Despeckling
 % PolSAR images with a structure tensor filter", under revision in
 % IEEE-GRSL.
 % Please, refer the publications (1) and (2.
@@ -33,9 +33,9 @@ Ihh=sqrt(abs(Ihh));Ihv=sqrt(abs(Ihv))/sqrt(2);Ivv=sqrt(abs(Ivv));
 R   = abs(Ihh - Ivv);
 G   = (2*Ihv);
 B =  abs(Ihh + Ivv);
-R = histeq(R);
-G = histeq(G);
-B = histeq(B);
+%R = histeq(R);
+%G = histeq(G);
+%B = histeq(B);
 II = cat(3,R,G,B);
 HSV = rgb2hsv(II);
 Heq = histeq(HSV(:,:,3));
@@ -54,11 +54,11 @@ Pauli_Image= hsv2rgb(HSV_mod);
 %end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SDNLM: Stochastic Non-local Means Polarimetric Filter
-% From: (1) L. Torres, S. J. Sant’Anna, C. da Costa Freitas, and A. C. Frery, 
-% “Speckle reduction in polarimetric SAR imagery with stochastic distances
-% and nonlocal means,” Pattern Recognition, vol. 47, no. 1, pp. 141–157, 2014.
+% From: (1) L. Torres, S. J. Santï¿½Anna, C. da Costa Freitas, and A. C. Frery, 
+% ï¿½Speckle reduction in polarimetric SAR imagery with stochastic distances
+% and nonlocal means,ï¿½ Pattern Recognition, vol. 47, no. 1, pp. 141ï¿½157, 2014.
 % Coded in Matlab by Luis Gomez, July 2018 for getting result shown in:
-% (2) D. Santana-Cedrés, L. Gomez, L. Alvarez and A. C. Frery,"Despeckling
+% (2) D. Santana-Cedrï¿½s, L. Gomez, L. Alvarez and A. C. Frery,"Despeckling
 % PolSAR images with a structure tensor filter", under revision in
 % IEEE-GRSL.
 % Please, refer the publications (1) and (2.
