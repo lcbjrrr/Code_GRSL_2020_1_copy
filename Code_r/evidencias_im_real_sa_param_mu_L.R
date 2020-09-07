@@ -27,8 +27,11 @@ source("loglikd.r")
 # 
 setwd("..")
 setwd("Data")
+
+args <- commandArgs(trailingOnly = TRUE)
+
 # channels hh(1), hv(2), and vv(3)
-mat <- scan('flevoland_1.txt')
+mat <- scan(args[1])
 setwd("..")
 setwd("Code_r")
 ########## setup to Flevoland
@@ -88,7 +91,7 @@ dfev <- data.frame(xev, evidencias)
 names(dfev) <- NULL
 setwd("..")
 setwd("Data")
-sink("evidence_flev_hh.txt")
+sink(args[2])
 print(dfev)
 sink()
 setwd("..")
