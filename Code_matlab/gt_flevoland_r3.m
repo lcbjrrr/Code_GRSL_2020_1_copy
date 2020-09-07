@@ -34,7 +34,8 @@ imshow(II)
 %
 axis on
 hold on;
-impixelinfo;
+%LUIZ
+%impixelinfo;
 % set region
 x0 = m / 2 + 305;
 y0 = n / 2 + 77;
