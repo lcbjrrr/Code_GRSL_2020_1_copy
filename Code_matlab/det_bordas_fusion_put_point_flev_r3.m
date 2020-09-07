@@ -67,13 +67,14 @@ tempo = zeros(1, nt);
 for i=1: nt
 tic;
 % Set fusion methods
-%[IF] = fus_media(IM, m, n, nc);
+[IF] = fus_media(IM, m, n, nc);
 %[IF] = fus_pca(IM, m, n, nc);
 %[IF] = fus_swt(IM, m, n, nc);
 %[IF] = fus_dwt(IM, m, n, nc);
 %[IF] = fus_roc(IM, m, n, nc);
 %[IF] = fus_maior_voto(IM, m, n, nc);
-[IF] = fus_svd(IM, m, n, nc);
+%LUIZ!!!
+%[IF] = fus_svd(IM, m, n, nc);
 tempo(i) = toc;
 end
 t= sum(tempo(1:nt)) / nt;
