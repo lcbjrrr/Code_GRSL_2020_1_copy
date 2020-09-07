@@ -18,8 +18,8 @@ install.packages("latex2exp")
 library(latex2exp)
 install.packages("GenSA")
 library(GenSA)
-install.packages("GenSA")
-
+install.packages("maxLik")
+library(maxLik)
 #
 source("func_obj_l_L_mu.r")
 source("loglike.r")
