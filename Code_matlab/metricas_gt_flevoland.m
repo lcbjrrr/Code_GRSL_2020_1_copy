@@ -46,10 +46,11 @@ for canal = 1 : nc
 end
 [IF1] = fus_media(IM, m, n, nc);
 [IF2] = fus_pca(IM, m, n, nc);
-[IF3] = fus_swt(IM, m, n, nc);
-[IF4] = fus_dwt(IM, m, n, nc);
+%[IF3] = fus_swt(IM, m, n, nc);
+%[IF4] = fus_dwt(IM, m, n, nc);
 [IF5] = fus_roc(IM, m, n, nc);
-[IF6] = fus_svd(IM, m, n, nc);
+%[IF6] = fus_svd(IM, m, n, nc);
+%LUIZ
 GT = zeros(m, n);
 cd ..
 cd Data
