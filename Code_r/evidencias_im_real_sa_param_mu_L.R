@@ -12,6 +12,11 @@
 #      2) Disable the print in file after running the tests of interest in order not to modify files unduly.
 #
 
+library(ggplot2)
+library(latex2exp)
+library(GenSA)
+library(maxLik)
+
 #
 source("func_obj_l_L_mu.r")
 source("loglike.r")
