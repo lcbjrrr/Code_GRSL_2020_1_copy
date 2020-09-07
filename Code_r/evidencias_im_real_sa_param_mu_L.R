@@ -12,10 +12,14 @@
 #      2) Disable the print in file after running the tests of interest in order not to modify files unduly.
 #
 rm(list = ls())
-require(ggplot2)
-require(latex2exp)
-require(GenSA)
-require(maxLik)
+install.packages("ggplot2")
+library(ggplot2)
+install.packages("latex2exp")
+library(latex2exp)
+install.packages("GenSA")
+library(GenSA)
+install.packages("maxLik")
+
 #
 source("func_obj_l_L_mu.r")
 source("loglike.r")
