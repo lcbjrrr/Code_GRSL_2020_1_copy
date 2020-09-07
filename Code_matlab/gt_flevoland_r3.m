@@ -50,7 +50,7 @@ GT(x(i), y(i)) = 1;
 %    				'MarkerSize',3.5,...
 %    				'MarkerEdgeColor',[0.85 0.325 0.089],...
 %    				'MarkerFaceColor', [0.85 0.325 0.089])
-%end	
+end	
 x0 = m / 2 + 243;
 y0 = n / 2 + 20;
 xf = m / 2 + 237;
@@ -64,7 +64,7 @@ GT(x(i), y(i)) = 1;
 %    				'MarkerSize',3.5,...
 %    				'MarkerEdgeColor',[0.85 0.325 0.089],...
 %    				'MarkerFaceColor', [0.85 0.325 0.089])
-%end	
+end	
 %%%%%%%%%%% show gt %%%%%%%%%%%%%%%%%%
 %imshow(GT)
 %
