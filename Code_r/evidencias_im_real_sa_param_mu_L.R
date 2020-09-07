@@ -18,7 +18,7 @@ install.packages("latex2exp")
 library(latex2exp)
 install.packages("GenSA")
 library(GenSA)
-install.packages("maxLik")
+install.packages("GenSA")
 
 #
 source("func_obj_l_L_mu.r")
