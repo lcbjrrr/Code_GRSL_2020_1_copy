@@ -88,12 +88,7 @@ for k= 1: nk
 		end
 	end
 	freq_f1(k + 1) = contador_f1 / num_radial;
-	contador_f2 = 0;
-	for j = 1: num_radial
-		if (erro_f2(j) < k)
-			contador_f2 = contador_f2 + 1;
-		end
-	end
+
 end
 cd ..
 cd Data
