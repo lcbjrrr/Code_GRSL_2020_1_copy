@@ -25,7 +25,7 @@ library(extrafont)
 install.packages("extrafont")
 library(extrafont)
 
-font_import(prompt = FALSE,pattern = "Times"))
+font_import(prompt = FALSE,pattern = "Times")
 loadfonts()
 #
 setwd("..")
