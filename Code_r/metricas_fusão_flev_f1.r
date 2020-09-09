@@ -22,7 +22,10 @@ library(hrbrthemes)
 install.packages("extrafont")
 library(extrafont)
 
+install.packages("extrafont")
+library(extrafont)
 
+font_import()
 loadfonts()
 #
 setwd("..")
