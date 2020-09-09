@@ -52,7 +52,7 @@ df <- data.frame(x = x, y1 = freq_f1)
 
 alpha <- c(1)
 p <- ggplot(df) 
-pp <- p + geom_line(aes(x = x, y = y1, color = "Aver")  , size=4, alpha=.7) 
+pp <- p + geom_line(aes(x = x, y = y1, color = "Aver")  , size=4, alpha=.7) +
     ylim(.01,1) +
 	ylab(TeX('Probability')) +
 	xlab(TeX('Detection error')) +
