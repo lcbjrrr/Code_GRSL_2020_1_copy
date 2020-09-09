@@ -25,7 +25,7 @@ library(extrafont)
 install.packages("extrafont")
 library(extrafont)
 
-font_import()
+font_import(prompt = FALSE)
 loadfonts()
 #
 setwd("..")
@@ -66,6 +66,8 @@ pp <- p + geom_line(aes(x = x, y = y1, color = "Aver")  , size=4, alpha=.7) +
   theme(plot.margin=grid::unit(c(0,0,0,0), "mm"),
         )
 print(pp) 
+ggsave(pp, file='metricas_fusão_flev_f1.pdf')
+
 
 
 
