@@ -70,10 +70,9 @@ end
 imshow(II);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Print radials
-cd ..
-cd Data
+
 for canal = 1: nc 
-	fname = sprintf('flevoland_%d.txt', canal);
+	fname = sprintf('../Data/flevoland_%d.txt', canal);
 	fid = fopen(fname,'w');
 	for i = 1: num_radial
 		for j = 1: r
@@ -85,8 +84,8 @@ for canal = 1: nc
 end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % command print (xc, yc)
-	fnamexc = sprintf('xc_flevoland.txt');
-	fnameyc = sprintf('yc_flevoland.txt');
+	fnamexc = sprintf('../Data/xc_flevoland.txt');
+	fnameyc = sprintf('../Data/yc_flevoland.txt');
 	fidxc = fopen(fnamexc,'w');
 	fidyc = fopen(fnameyc,'w');
         for i = 1: num_radial
@@ -99,6 +98,5 @@ end
 	end
 	fclose(fidxc);       
 	fclose(fidyc);       
-cd ..
-cd Code_matlab
+
 
